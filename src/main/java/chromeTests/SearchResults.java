@@ -21,7 +21,7 @@ public class SearchResults {
 //        return driver.findElement(By.xpath(secondResultXPath)).getDomAttribute("href");
 //    }
 
-    public static String getResultLinkusingIndex(int index) {
+    public static String getResultLinkUsingIndex(int index) {
         return driver.findElement(By.xpath(ResultXpath+"["+index+"]")).getDomAttribute("href");
     }
 }
