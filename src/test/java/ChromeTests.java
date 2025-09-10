@@ -53,7 +53,7 @@ public class ChromeTests {
         String expectedFirstResultLink = "https://www.selenium.dev/documentation/webdriver/";
         home.search("Selenium WebDriver");
         //String actualFirstResultLink = SearchResults.getFirstResultLink();
-        String actualFirstResultLink = SearchResults.getResultLinkusingIndex(1);
+        String actualFirstResultLink = SearchResults.getResultLinkUsingIndex(1);
         Assert.assertEquals(actualFirstResultLink, expectedFirstResultLink, "First result does not match!");
     }
 
@@ -72,7 +72,7 @@ public class ChromeTests {
         String expectedSecondResultLinkPart = "https://www.linkedin.com";
         home.search("Cucumber io");
         //String actualSecondResultLink = SearchResults.getSecondResultLink();
-        String actualSecondResultLink = SearchResults.getResultLinkusingIndex(2);
+        String actualSecondResultLink = SearchResults.getResultLinkUsingIndex(2);
         Assert.assertTrue(actualSecondResultLink.contains(expectedSecondResultLinkPart), "Second result link does not contain https://www.linkedin.com");
     }
 
